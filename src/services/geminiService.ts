@@ -6,7 +6,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { DocRow } from "./types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+const ai = new GoogleGenAI({ apiKey:  import.meta.env.VITE_API_KEY });
 
 const docRowSchema = {
   type: Type.ARRAY,
